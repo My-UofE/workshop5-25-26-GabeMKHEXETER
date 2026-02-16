@@ -20,11 +20,13 @@ public class CopyArrayApp{ //class defined
     System.out.println(x);
     
     
-   /* for (int i = 0; i < x.size; i++){
+   for (int i = 0; i < x.size; i++){
         //int currentVal = myVals[i];
         for (int j = 0; j < x.size; j++){ //to compare all values to check for dupes
             if (j != i){ //if equal it will remove the wrong item :c
-                if (x[i] == x[j]){//if the items are the same 
+            int a = x[i];
+            int b = x[j];
+                if (a == b){//if the items are the same 
                     x = ArrayUtils.removeElement(myVals, j); //function I found hehe
                 }
                 else{
@@ -36,6 +38,6 @@ public class CopyArrayApp{ //class defined
             }
         }
     }
-    System.out.println("original values: " + Arrays.toString(myVals)); */
+    System.out.println("original values: " + Arrays.toString(myVals)); 
   }
 }
